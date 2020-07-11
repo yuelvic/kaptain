@@ -22,8 +22,13 @@ class FeatureAActivity : AppCompatActivity(), KoinComponent {
         setContentView(R.layout.activity_feature_a)
 
         vGoToFeatureB.setOnClickListener {
-            kaptain.navigate(
+//            kaptain.navigate(
+//                activity = this,
+//                destination = Destination.FeatureB(message = GREETING)
+//            )
+            kaptain.navigateWithCircularReveal(
                 activity = this,
+                originView = vGoToFeatureB,
                 destination = Destination.FeatureB(message = GREETING)
             )
         }

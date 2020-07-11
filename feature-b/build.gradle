@@ -4,7 +4,9 @@ apply from: '../android-module.gradle'
 dependencies {
     implementation project(':kaptain')
     implementation project(":feature-shared")
-    
+
     implementation ModuleLib.KOIN
     implementation ModuleLib.APP_COMPAT
+
+    implementation 'com.github.tombayley:ActivityCircularReveal:1.0.2'
 }

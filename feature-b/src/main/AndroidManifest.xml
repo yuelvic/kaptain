@@ -2,7 +2,8 @@
     package="cafe.adriel.kaptain.sample.feature.b" >
 
     <application>
-        <activity android:name=".FeatureBActivity"/>
+        <activity android:name=".FeatureBActivity"
+            android:theme="@style/CircularReveal"/>
     </application>
     
 </manifest>
